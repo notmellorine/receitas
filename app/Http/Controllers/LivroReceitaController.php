@@ -193,8 +193,8 @@ class LivroReceitaController extends Controller
         if ($id >= 0 && $id <= count($data)){
             $item = $data[$id]['name'];
             $ingredientes = $data[$id]['ingredientes'];
-            $preparos = $data[$id]['preparo'];
-            return view('receita', compact('item', 'ingredientes', 'preparos'));
+            $preparo = $data[$id]['preparo'];
+            return view('receita', compact('item', 'ingredientes', 'preparo'));
         } else {
             abort(404);
         }

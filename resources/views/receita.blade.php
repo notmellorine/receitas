@@ -16,9 +16,7 @@
     </ul>
     <h3>Modo de preparo:</h3>
     <p>
-        @foreach($preparo as $preparos)
-            <li>{{$preparos}}</li>
-        @endforeach
+        {{$preparo}}
     </p>
 </body>
 </html>
